@@ -11,16 +11,16 @@ function App() {
   let [counter, setCounter] = useState(0)
   // let counter = 0
   const addValue = () => {
+    if(counter  < 20){
     setCounter(counter + 1)
+    }
     // setCounter ->	Function to change the state	Helps to update counter safely.
   }
 
-
-
-
-
   const removeValue = () => {
+    if(counter > 0){
     setCounter(counter - 1);
+    }
   }
 
   return (
